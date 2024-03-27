@@ -7,10 +7,13 @@ setInterval(updateDateTime,1000);
 
 //Get the current year
 const currentYear = new Date().getFullYear();
+
 //Copyright text
 const copyrightText = "Levin Mathew Abraham. All Rights Reserved";
+
 //Display copyright details in the console
 console.log(`© ${currentYear} ${copyrightText}`);
+
 //Display copyright details in the webpage
 document.addEventListener("DOMContentLoaded", function(){
     const copyrightElement = document.getElementById("copyright");
