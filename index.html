@@ -11,7 +11,7 @@
     <header class="bg-dark" style="width: 100%; position: fixed; z-index: 1;">
         <div class="row col text-white">
             <div class="col-md-6 col-9 p-3 pl-4">
-                <h2>Levin Mathew Abraham</h2>
+                <h2>LEVIN MATHEW ABRAHAM</h2>
             </div>
             <div class="col-md-6 col-3 my-auto">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -38,6 +38,17 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="row">
+                    <span id="datetime" class="ml-auto"></span>
+                    <script>
+                        function updateDateTime(){
+                            const now=new Date();
+                            const currentDateTime=now.toLocaleString();
+                            document.querySelector('#datetime').textContent=currentDateTime;
+                        }
+                        setInterval(updateDateTime,1000);
+                    </script>
+                </div>
             </div>
         </div>
     </header>
