@@ -6,6 +6,7 @@
     <title>Levin Mathew Abraham</title>
     <link rel="icon" href="images/levin.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="bg-dark" style="width: 100%; position: fixed; z-index: 1;">
@@ -40,14 +41,6 @@
                 </nav>
                 <div class="row">
                     <span id="datetime" class="ml-auto"></span>
-                    <script>
-                        function updateDateTime(){
-                            const now=new Date();
-                            const currentDateTime=now.toLocaleString();
-                            document.querySelector('#datetime').textContent=currentDateTime;
-                        }
-                        setInterval(updateDateTime,1000);
-                    </script>
                 </div>
             </div>
         </div>
@@ -271,10 +264,7 @@
                     <a style="text-decoration: none; color: white;" href="https://www.youtube.com/@levinmathewabraham"><i class="fa-brands fa-youtube"></i></a>
                     <a style="text-decoration: none; color: white;" href="https://open.spotify.com/user/zhgycxdez1uunbssq8s3ycddq?si=9e9788704d7e441a"><i class="fa-brands fa-spotify"></i></a>
                     <br>
-                    <script>
-                        var getDate=new Date().getFullYear();
-                        document.write('&copy; Copyright '+getDate+' Levin Mathew Abraham. All Rights Reserved')
-                    </script>
+                    <span id="copyright"></span>
                 </div>
             </div>
         </div>
